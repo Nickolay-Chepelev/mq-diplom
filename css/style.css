@@ -95,7 +95,7 @@
 .textarea {
   padding: 20px;
   min-height: 130px;
-  resize: vertical;
+  resize: none;
   margin-bottom: 30px;
 }
 .button {
