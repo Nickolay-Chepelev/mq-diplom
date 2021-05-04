@@ -22,8 +22,8 @@
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 3;
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
 }
 .popup {
   position: relative;
@@ -41,7 +41,7 @@
   font-size: 13px;
   margin-bottom: 10px;
 }
-.input, .select {
+.input, .select, .textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
@@ -60,7 +60,7 @@
   background-position: right 15px center;
   margin-bottom: 30px;
 }
-.input:focus, .select:focus {
+.input:focus, .select:focus, .textarea:focus {
   outline: 1px solid #b59f5b;
 }
 .radio-group {
@@ -92,8 +92,10 @@
   height: 1px;
   width: 1px;
 }
-.input-text {
-  padding: 20px 20px 100px;
+.textarea {
+  padding: 20px;
+  min-height: 130px;
+  resize: vertical;
   margin-bottom: 30px;
 }
 .button {
