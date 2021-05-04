@@ -22,8 +22,8 @@
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 3;
-  display: flex;
-  /* display: none; */
+  /* display: flex; */
+  display: none;
 }
 .popup {
   position: relative;
@@ -287,9 +287,6 @@
 .main-post-image-block {
   flex-basis: 48.72%;
   margin-right: 30px;
-}
-.main-post-image {
-  object-fit: contain;
 }
 .main-post-more-info {
   flex-basis: 51.28%;
