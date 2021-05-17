@@ -700,31 +700,32 @@
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-  .trend-feed {
-    flex-wrap: wrap;
-  }
+
   .trend-card {
     flex-basis: 49.73%;
-    height: 247px;
-    padding: 0;
-  }
-  .trend-card:nth-child(n+2) {
-    margin-left: 0;
-  }
-  .trend-card:nth-child(2n+2) {
-    margin-left: 4px;
-  }
-  .trend-card:nth-child(n+3) {
-    margin-top: 3px;
-  }
-  .trend-card-description {
-    padding: 35px 30px;
-    margin: auto 20px 16px;
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend-feed {
+    flex-wrap: nowrap;
+  }
   .trend-card {
     flex-basis: 24.81%;
+    height: auto;
+    padding: 135px 20px 16px;
+  }
+  .trend-card:nth-child(n+2) {
+    margin-left: 4;
+  }
+  .trend-card:nth-child(2n+2) {
+    margin-left: 0;
+  }
+  .trend-card:nth-child(n+3) {
+    margin-top: 0;
+  }
+  .trend-card-description {
+    padding: 35px;
+    margin: 0;
   }
 }
 @media (max-width: 640px) {
@@ -783,12 +784,12 @@
   }
   .trend-feed {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start;    
   }
   .trend-card {
     padding: 0;
     height: 230px;
-    flex-basis: auto;
+    flex-basis: 100%;
   }
   .trend-card:nth-child(n+2) {
     margin-left: 0;
@@ -879,17 +880,24 @@
     margin-bottom: 45px;
   }
 }
+@media (max-width: 640px) and (orientation: portrait) {
+  .trend-card {
+    flex-basis: auto;
+  }
+}
 @media (max-width: 640px) and (orientation: landscape) {
   .trend-feed {
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .trend-card {
-    flex-basis: 49.68%;
+    flex-basis: 49.73%;
     height: 247px;
     padding: 0;
   }
   .trend-card:nth-child(n+2) {
-    margin-left: 0;
+    margin-top: 0;
   }
   .trend-card:nth-child(2n+2) {
     margin-left: 4px;
@@ -900,10 +908,5 @@
   .trend-card-description {
     padding: 35px 30px;
     margin: auto 20px 16px;
-  }
-}
-@media (max-width: 640px) and (orientation: portrait) {
-  .trend-card {
-    flex-basis: auto;
   }
 }
