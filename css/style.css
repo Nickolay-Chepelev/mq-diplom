@@ -616,6 +616,27 @@
     line-height: 55px;
     margin-top: 100px;
   }
+  .trend-feed {
+    flex-wrap: wrap;
+  }
+  .trend-card {
+    flex-basis: 49.73%;
+    height: 247px;
+    padding: 0;
+  }
+  .trend-card:nth-child(n+2) {
+    margin-left: 0;
+  }
+  .trend-card:nth-child(2n+2) {
+    margin-left: 4px;
+  }
+  .trend-card:nth-child(n+3) {
+    margin-top: 3px;
+  }
+  .trend-card-description {
+    padding: 35px 30px;
+    margin: auto 20px 16px;
+  }
   .h2-title {
     font-size: 17px;
     line-height: 22px;
@@ -701,6 +722,11 @@
     margin: auto 20px 16px;
   }
 }
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trend-card {
+    flex-basis: 24.81%;
+  }
+}
 @media (max-width: 640px) {
   .popup {
     flex-basis: 330px;
@@ -754,6 +780,23 @@
     font-size: 26px;
     line-height: 36px;
     margin: 45px auto 0;
+  }
+  .trend-feed {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .trend-card {
+    padding: 0;
+    height: 230px;
+    flex-basis: auto;
+  }
+  .trend-card:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 3px;
+  }
+  .trend-card-description {
+    padding: 30px 20px;
+    margin: auto 15px 15px;
   }
   .h2-title {
     font-size: 16px;
@@ -860,21 +903,7 @@
   }
 }
 @media (max-width: 640px) and (orientation: portrait) {
-  .trend-feed {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
   .trend-card {
-    padding: 0;
-    height: 230px;
     flex-basis: auto;
-  }
-  .trend-card:nth-child(n+2) {
-    margin-left: 0;
-    margin-top: 3px;
-  }
-  .trend-card-description {
-    padding: 30px 20px;
-    margin: auto 15px 15px;
   }
 }
