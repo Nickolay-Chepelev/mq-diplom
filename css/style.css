@@ -680,7 +680,7 @@
   .product-card {
     display: flex;
     flex-direction: column;
-    flex-basis: 41.01%;
+    flex-basis: 41.69%;
   }
   .product-card:nth-child(n+2) {
     margin-left: 0;
@@ -700,9 +700,8 @@
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-
   .trend-card {
-    flex-basis: 49.73%;
+    flex-basis: 49.60%;
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
@@ -724,7 +723,7 @@
     margin-top: 0;
   }
   .trend-card-description {
-    padding: 35px;
+    padding: 8.49%;
     margin: 0;
   }
 }
@@ -769,6 +768,9 @@
     margin-right: auto;
     margin-top: 175px;
   }
+  .logo-link {
+    text-align: center;
+  }
   .menu-list {
     display: none;
   }
@@ -784,7 +786,7 @@
   }
   .trend-feed {
     flex-direction: column;
-    justify-content: flex-start;    
+    justify-content: flex-start;
   }
   .trend-card {
     padding: 0;
@@ -892,7 +894,7 @@
     justify-content: space-between;
   }
   .trend-card {
-    flex-basis: 49.73%;
+    flex-basis: 49.58%;
     height: 247px;
     padding: 0;
   }
@@ -906,7 +908,7 @@
     margin-top: 3px;
   }
   .trend-card-description {
-    padding: 35px 30px;
-    margin: auto 20px 16px;
+    padding: 35px 7.89%;
+    margin: auto 5.26% 16px;
   }
 }
