@@ -676,20 +676,26 @@
   }
   .product-feed {
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
   }
   .product-card {
     display: flex;
     flex-direction: column;
     flex-basis: 41.69%;
+    margin-bottom: 50px;
+  }
+  .product-card:first-child {
+    margin-left: 20px;
+    margin-right: 68px;
   }
   .product-card:nth-child(n+2) {
     margin-left: 0;
+    margin-right: 20px;
   }
-  .product-card:nth-child(2n+2) {
+  .product-card:last-child {
     margin-left: 68px;
-  }
-  .product-card:nth-child(n+3) {
-    margin-top: 50px;
+    margin-right: 68px;
   }
   .footer {
     max-width: 768px;
